@@ -2,27 +2,31 @@
 layout: default
 title: Balises
 permalink: /balises/
-balise87: http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=53
-balise23: http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=31
-balise19: http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=79
-balise46: http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=68
-urlBalise87 : http://www.balisemeteo.com/depart.php?dept=87
-urlBalise23 : http://www.balisemeteo.com/depart.php?dept=23
-urlBalise19 : http://www.balisemeteo.com/depart.php?dept=19
-urlBalise46 : http://www.balisemeteo.com/depart.php?dept=46
-webcam87: http://www.3il.fr/webcam/
-webcam23: https://icons.wunderground.com/webcamramdisk/w/u/WU_0409582/1/current.jpg
-webcam19: http://www.saint-yrieix-le-dejalat.meteoamikuze.com/Webcam/webcam.jpg
-webcam46: http://meteo-baladou.com/webcam/cam_1.jpg
+b87: http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=53
+b23: http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=31
+b19: http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=79
+b46: http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=68
+urlB87 : http://www.balisemeteo.com/depart.php?dept=87
+urlB23 : http://www.balisemeteo.com/depart.php?dept=23
+urlB19 : http://www.balisemeteo.com/depart.php?dept=19
+urlB46 : http://www.balisemeteo.com/depart.php?dept=46
+w87: http://www.3il.fr/webcam/
+w23: https://icons.wunderground.com/webcamramdisk/w/u/WU_0409582/1/current.jpg
+w19: http://www.saint-yrieix-le-dejalat.meteoamikuze.com/Webcam/webcam.jpg
+w46: http://meteo-baladou.com/webcam/cam_1.jpg
+blW: 175
+blH: 180
+wcW: 180
+wcH: 150
 ---
 
-<h1>Balises</h1>
-<a href="{{ page.urlBalise87 }}"><img src="{{ page.balise87 }}" width="175" height="180"/></a>
-<a href="{{ page.urlBalise23 }}"><img src="{{ page.balise23 }}" width="175" height="180"/></a>
-<a href="{{ page.urlBalise19 }}"><img src="{{ page.balise19 }}" width="175" height="180"/></a>
-<a href="{{ page.urlBalise46 }}"><img src="{{ page.balise46 }}" width="175" height="180"/></a>
+<h1>Balises FFVL</h1>
+<a href="{{ page.urlB87 }}"><img src="{{ page.b87 }}" width="{{ page.blW }}" height="{{ page.blH }}"/></a>
+<a href="{{ page.urlB23 }}"><img src="{{ page.b23 }}" width="{{ page.blW }}" height="{{ page.blH }}"/></a>
+<a href="{{ page.urlB19 }}"><img src="{{ page.b19 }}" width="{{ page.blW }}" height="{{ page.blH }}"/></a>
+<a href="{{ page.urlB46 }}"><img src="{{ page.b46 }}" width="{{ page.blW }}" height="{{ page.blH }}"/></a>
 <h1>Webcams</h1>
-<a href="{{ page.webcam87 }}"><img src="{{ page.webcam87 }}" width="180" height="150"/></a>
-<a href="{{ page.webcam23 }}"><img src="{{ page.webcam23 }}" width="180" height="150"/></a>
-<a href="{{ page.webcam19 }}"><img src="{{ page.webcam19 }}" width="180" height="150"/></a>
-<a href="{{ page.webcam46 }}"><img src="{{ page.webcam46 }}" width="180" height="150"/></a>
+<a href="{{ page.w87 }}"><img src="{{ page.w87 }}" width="{{ page.wcW }}" height="{{ page.wcH }}"/></a>
+<a href="{{ page.w23 }}"><img src="{{ page.w23 }}" width="{{ page.wcW }}" height="{{ page.wcH }}"/></a>
+<a href="{{ page.w19 }}"><img src="{{ page.w19 }}" width="{{ page.wcW }}" height="{{ page.wcH }}"/></a>
+<a href="{{ page.w46 }}"><img src="{{ page.w46 }}" width="{{ page.wcW }}" height="{{ page.wcH }}"/></a>

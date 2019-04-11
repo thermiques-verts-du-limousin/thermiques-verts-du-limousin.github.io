@@ -4,7 +4,9 @@
   link: /photos/
 - name: Balises
   link: /balises/
-- name: Voler
+- name: Sites
   link: /sites/
+- name: Liens
+  link: /links/
 - name: Contact
   link: /contact/

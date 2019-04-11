@@ -1,8 +1,10 @@
 - name: Accueil
   link: /
-- name: Contact
-  link: /contact/
 - name: Photos
   link: /photos/
-- name: Balises 
+- name: Balises
   link: /balises/
+- name: Voler
+  link: /sites/
+- name: Contact
+  link: /contact/

@@ -5,35 +5,35 @@ permalink: /links/
 ---
 
 <h1>Sites météo</h1>
-{% for item in site.data.links_weathercast %}
+{% for item in site.data.links.links_weathercast %}
   <li><a href="{{ item.url }}">
     {{ item.name }}
   </a></li>
 {% endfor %}
 
 <h1>Balises</h1>
-{% for item in site.data.links_wind_captors %}
+{% for item in site.data.links.links_wind_captors %}
   <li><a href="{{ item.url }}">
     {{ item.name }}
   </a></li>
 {% endfor %}
 
 <h1>Espace aérien</h1>
-{% for item in site.data.links_space_area %}
+{% for item in site.data.links.links_space_area %}
   <li><a href="{{ item.url }}">
     {{ item.name }}
   </a></li>
 {% endfor %}
 
 <h1>Clubs et écoles des environs</h1>
-{% for item in site.data.links_club_school_federation %}
+{% for item in site.data.links.links_club_school_federation %}
   <li><a href="{{ item.url }}">
     {{ item.name }}
   </a></li>
 {% endfor %}
 
 <h1>Documentation théorique</h1>
-{% for item in site.data.links_technical_documentation %}
+{% for item in site.data.links.links_technical_documentation %}
   <li><a href="{{ item.url }}">
     {{ item.name }}
   </a></li>

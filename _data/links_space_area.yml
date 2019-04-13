@@ -1,0 +1,7 @@
+- name: Geoportail
+  url: https://www.geoportail.gouv.fr/carte
+  description: pour visionner la carte des zones aériennes, onglet "Cartes">"Données thématiques">"Territoires et Transports">"Transports">"Carte OACI-VFR"
+- name: SIA
+  url: https://www.sia.aviation-civile.gouv.fr
+- name: NOTAM
+  url: http://notamweb.aviation-civile.gouv.fr

@@ -5,26 +5,36 @@ permalink: /links/
 ---
 
 <h1>Sites météo</h1>
-<li><a href='https://www.windfinder.com/'>Windfinder</a></li>
-<li><a href='https://meteo-parapente.com/'>Meteo-parapente</a></li>
-<li><a href='http://www.meteociel.fr/'>Meteociel</a></li>
-<li><a href='https://www.meteoblue.com/fr/'>Meteoblue</a></li>
-<li><a href='http://www.xcweather.co.uk/FR/'>XC weather</a></li>
-<li><a href='https://www.windguru.cz/'>Windguru</a></li>
-<li><a href='https://www.velivole.fr/'>Vélivole</a></li>
-<li><a href='https://www.windy.com/'>Windy</a></li>
+{% for item in site.data.links_weathercast %}
+  <li><a href="{{ item.url }}">
+    {{ item.name }}
+  </a></li>
+{% endfor %}
+
 <h1>Balises</h1>
-<li><a href='https://www.spotair.mobi/'>Spotair</a></li>
-<li><a href='http://www.balisemeteo.com/index.php'>Balise météo (FFVL)</a></li>
-<li><a href='https://winds.mobi/stations/map'>Winds.mobi</a></li>
+{% for item in site.data.links_wind_captors %}
+  <li><a href="{{ item.url }}">
+    {{ item.name }}
+  </a></li>
+{% endfor %}
+
 <h1>Espace aérien</h1>
-<li><a href='https://www.geoportail.gouv.fr/carte'>Geoportail</a> pour visionner la carte des zones aériennes, onglet "Cartes">"Données thématiques">"Territoires et Transports">"Transports">"Carte OACI-VFR"</li>
-<li><a href='https://www.sia.aviation-civile.gouv.fr'>SIA</a></li>
-<li><a href='http://notamweb.aviation-civile.gouv.fr/'>Consultation des NOTAM</a></li>
+{% for item in site.data.links_space_area %}
+  <li><a href="{{ item.url }}">
+    {{ item.name }}
+  </a></li>
+{% endfor %}
+
 <h1>Clubs et écoles des environs</h1>
-<li><a href='http://www.marcheenlair.fr/'>Marche en l'air</a>, club Creusois</li>
-<li><a href='https://www.facebook.com/groups/279026305586497/'>Groupe facebook des Têtes en l'air</a>, club corrézien</li>
-<li><a href='http://www.unilim.fr/suaps/activites/sports-de-nature/parapente/'>SUAPS de Limoges</a>, section parapente</li>
-<li><a href='https://aquitaine-vol-libre.jimdo.com/'>Ligue Nouvelle Aquitaine</a></li>
+{% for item in site.data.links_club_school_federation %}
+  <li><a href="{{ item.url }}">
+    {{ item.name }}
+  </a></li>
+{% endfor %}
 
 <h1>Documentation théorique</h1>
+{% for item in site.data.links_technical_documentation %}
+  <li><a href="{{ item.url }}">
+    {{ item.name }}
+  </a></li>
+{% endfor %}

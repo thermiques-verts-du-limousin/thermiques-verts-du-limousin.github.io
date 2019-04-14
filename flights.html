@@ -1,0 +1,34 @@
+---
+layout: default
+title: Vols
+permalink: /flights/
+---
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Pilote</th>
+    <th>Dist. (km)</th>
+    <th>Points</th>
+    <th>Dép.</th>
+    <th>Type de vol</th>
+    <th>Aile</th>
+    <th>CFD</th>
+    <th>Traces FFVL</th>
+    <th>Traces autre</th>
+  </tr>
+  {% for flight in site.flights %}
+    <tr>
+      <td>{{ flight.date | date: "%d/%m/%y" }}</td>
+      <td>{{ flight.pilote }}</td>
+      <td>{{ flight.distance }}</td>
+      <td>{{ flight.points }}</td>
+      <td>{{ flight.departement }}</td>
+      <td>{{ flight.flightType }}</td>
+      <td>{{ flight.wing }}</td>
+      <td>{{ flight.CFD }}</td>
+      <td>{% if flight.url_ffvl %}<a href={{ flight.url_ffvl }}>FFVL</a>{% endif %}</td>
+      <td>{% if flight.other_url %}<a href={{ flight.other_url }}>{{ flight.other_url_site_name }}</a>{% endif %}</td>
+    </tr>
+
+  {% endfor %}
+</table>

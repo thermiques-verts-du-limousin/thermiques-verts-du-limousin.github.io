@@ -252,3 +252,10 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+/* Images page balises */
+.img_balise, .img_webcam {
+  max-width: 450px;
+  min-width: 250px;
+  width: 45%;
+}
